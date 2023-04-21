@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main-css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onresize="maxWidth()">
+    <div class="nav">
+        <div class="left">
+            <h1 class="header">refocus</h1>
+        </div>
+        <div class="right">
+            <a href="#" class="menu active">Blog</a>
+            <a href="#" class="menu">Our courses</a>
+            <a href="#" class="menu">Free webinars</a>
+            <a href="#" class="menu">Reviews</a>
+            <a href="#" class="menu">Signup</a>
+            <a href="#" id="login" class="login">Log In</a>
+            <a class="threeline">&#9776;</a>
+
+        </div>
+    </div>
+
+    <!-- CONTENT OR PRODUCT DIVISION -->
+    <div class="products">
+        <div class="item" onmouseover="closeMarkOver()" onmouseout="closeMarkOut()" style="background-image: url('./images/Image.png');">
+            <span class="closeMark" onclick="closeItem()">&#11198;</span>
+            <div class="item-div">
+                
+                <div class="itemDescription" onmouseover="showCheck()" onmouseout="showCheckout()">
+                    <div class="checkMark" onclick="showCheckClick()">&#10003;</div>
+                    <h2>Front-End vs Back-End<br>
+                    Developer: What's<br>
+                    the Different?</h2>
+                </div>                
+            </div>
+            <div class="item-pulse">
+                    <div class="item-pulse-div">
+                    <div class="item-pulse-left">
+                        January 3, 2023
+                    </div>
+                    <div class="item-pulse-right"><!-- &#9825;-->
+                        <span id="heart" class="heart" onclick="heart()">&#10084;</span>&nbsp; 
+                        <span id="countHeart" class="countHeart">2.5K</span>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="item" onmouseover="closeMarkOver()" onmouseout="closeMarkOut()" style="background-image: url('./images/Image-1.png');">
+            <span class="closeMark" onclick="closeItem()">&#11198;</span>
+            <div class="item-div">
+                
+                <div class="itemDescription" onmouseover="showCheck()" onmouseout="showCheckout()">
+                    <div class="checkMark" onclick="showCheckClick()">&#10003;</div>
+                    <h2>What is a Full Stack<br>
+                    Developer?</h2>
+                </div>
+            </div>
+            <div class="item-pulse">
+                    <div class="item-pulse-div">
+                    <div class="item-pulse-left">
+                        January 3, 2023
+                    </div>
+                    <div class="item-pulse-right">
+                        <span id="heart" class="heart" onclick="heart()">&#10084;</span>&nbsp; 
+                        <span id="countHeart" class="countHeart">2.5K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item" onmouseover="closeMarkOver()" onmouseout="closeMarkOut()" style="background-image: url('./images/Image-2.png');">
+            <span class="closeMark" onclick="closeItem()">&#11198;</span>
+            <div class="item-div">
+                
+                <div class="itemDescription" onmouseover="showCheck()" onmouseout="showCheckout()">
+                    <div class="checkMark" onclick="showCheckClick()">&#10003;</div>
+                    <h2>What are Soft Skills and How<br>
+                    Do They Benefit your Career?</h2>
+                </div>
+            </div>
+            <div class="item-pulse">
+                    <div class="item-pulse-div">
+                    <div class="item-pulse-left">
+                        January 3, 2023
+                    </div>
+                    <div class="item-pulse-right">
+                        <span id="heart" class="heart" onclick="heart()">&#10084;</span>&nbsp; 
+                        <span id="countHeart" class="countHeart">2.5K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item" onmouseover="closeMarkOver()" onmouseout="closeMarkOut()" style="background-image: url('./images/Image-3.png');">
+            <span class="closeMark" onclick="closeItem()">&#11198;</span>
+            <div class="item-div">
+                
+                <div class="itemDescription" onmouseover="showCheck()" onmouseout="showCheckout()">
+                    <div class="checkMark" onclick="showCheckClick()">&#10003;</div>
+                    <h2>IT Jobs:In-Demand, Available<br>
+                    to Everyone, Ripe With<br>
+                    Opportunity</h2>
+                </div>
+            </div>
+            <div class="item-pulse">
+                    <div class="item-pulse-div">
+                    <div class="item-pulse-left">
+                        January 3, 2023
+                    </div>
+                    <div class="item-pulse-right">
+                        <span id="heart" class="heart" onclick="heart()">&#10084;</span>&nbsp; 
+                        <span id="countHeart" class="countHeart">2.5K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item" onmouseover="closeMarkOver()" onmouseout="closeMarkOut()" style="background-image: url('./images/Image-4.png');">
+            <span class="closeMark" onclick="closeItem()">&#11198;</span>
+            <div class="item-div">
+                
+                <div class="itemDescription" onmouseover="showCheck()" onmouseout="showCheckout()">
+                    <div class="checkMark" onclick="showCheckClick()">&#10003;</div>
+                    <h2>7 Learning Tips for Data<br>
+                    Science Self-Study</h2>
+                </div>
+            </div>
+            <div class="item-pulse">
+                    <div class="item-pulse-div">
+                    <div class="item-pulse-left">
+                        January 3, 2023
+                    </div>
+                    <div class="item-pulse-right">
+                        <span id="heart" class="heart" onclick="heart()">&#10084;</span>&nbsp; 
+                        <span id="countHeart" class="countHeart">2.5K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item" onmouseover="closeMarkOver()" onmouseout="closeMarkOut()" style="background-image: url('./images/Image-5.png');">
+            <span class="closeMark" onclick="closeItem()">&#11198;</span>
+            <div class="item-div">
+                
+                <div class="itemDescription" onmouseover="showCheck()" onmouseout="showCheckout()">
+                    <div class="checkMark" onclick="showCheckClick()">&#10003;</div>
+                    <h2>Hard Skills vs. Soft Skills:<br>
+                    Do You Really Need Both?<br>
+                    Why?</h2>
+                </div>
+            </div>
+            <div class="item-pulse">
+                    <div class="item-pulse-div">
+                    <div class="item-pulse-left">
+                        January 3, 2023
+                    </div>
+                    <div class="item-pulse-right">
+                        <span id="heart" class="heart" onclick="heart()">&#10084;</span>&nbsp; 
+                        <span id="countHeart" class="countHeart">2.5K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item" onmouseover="closeMarkOver()" onmouseout="closeMarkOut()" style="background-image: url('./images/Image-6.png');">
+            <span class="closeMark" onclick="closeItem()">&#11198;</span>
+            <div class="item-div">
+                
+                <div class="itemDescription" onmouseover="showCheck()" onmouseout="showCheckout()">
+                    <div class="checkMark" onclick="showCheckClick()">&#10003;</div>
+                    <h2>What is JavaScript?</h2>
+                </div>
+            </div>
+            <div class="item-pulse">
+                    <div class="item-pulse-div">
+                    <div class="item-pulse-left">
+                        January 3, 2023
+                    </div>
+                    <div class="item-pulse-right">
+                        <span id="heart" class="heart" onclick="heart()">&#10084;</span>&nbsp; 
+                        <span id="countHeart" class="countHeart">2.5K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item" onmouseover="closeMarkOver()" onmouseout="closeMarkOut()" style="background-image: url('./images/Image-7.png');">
+            <span class="closeMark" onclick="closeItem()">&#11198;</span>
+            <div class="item-div">
+                
+                <div class="itemDescription" onmouseover="showCheck()" onmouseout="showCheckout()">
+                    <div class="checkMark" onclick="showCheckClick()">&#10003;</div>
+                    <h2>Who is a Business Analyst:<br>
+                    Roles, Skills, Salaries, Job<br>
+                    Prospects</h2>
+                </div>
+            </div>
+            <div class="item-pulse">
+                    <div class="item-pulse-div">
+                    <div class="item-pulse-left">
+                        January 3, 2023
+                    </div>
+                    <div class="item-pulse-right">
+                        <span id="heart" class="heart" onclick="heart()">&#10084;</span>&nbsp; 
+                        <span id="countHeart" class="countHeart">2.5K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item" onmouseover="closeMarkOver()" onmouseout="closeMarkOut()" style="background-image: url('./images/Image-8.png');">
+            <span class="closeMark" onclick="closeItem()">&#11198;</span>
+            <div class="item-div">
+                
+                <div class="itemDescription" onmouseover="showCheck()" onmouseout="showCheckout()">
+                    <div class="checkMark" onclick="showCheckClick()">&#10003;</div>
+                    <h2>FHow Much Do Data Analysts<br>
+                    Make? 2023 Salary Guide</h2>
+                </div>
+            </div>
+            <div class="item-pulse">
+                    <div class="item-pulse-div">
+                    <div class="item-pulse-left">
+                        January 3, 2023
+                    </div>
+                    <div class="item-pulse-right">
+                        <span id="heart" class="heart" onclick="heart()">&#10084;</span>&nbsp; 
+                        <span id="countHeart" class="countHeart">2.5K</span>
+                    </div>
+                </div>
+            </div>
+        </div>                        
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-inner footer-left">
+            <div class="footer-content">
+                <h2>BLOG</h2>
+            </div>
+            <div class="footer-content">
+                <a href="#" class="footer-menu">Data Analyst</a> 
+                <a href="#" class="footer-menu">Web Developer</a> 
+                <a href="#" class="footer-menu">Career</a> 
+                <a href="#" class="footer-menu">Success Stories</a> 
+                <a href="#" class="footer-menu">Resume</a> 
+                <a href="#" class="footer-menu">Hard Skills</a> 
+                <a href="#" class="footer-menu">SoftSkills</a> 
+            </div>
+            <div class="footer-content">
+                <h2>OUR COURSES</h2>
+            </div>
+            <div class="footer-content">
+                <a href="#" class="footer-menu">Data Analytics</a>
+                <a href="#" class="footer-menu">Web Developer</a>
+            </div>
+        </div>
+        <div class="footer-inner">
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+            </div>
+            <div class="footer-content">
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+                <a href="#" class="fa fa-play"></a>
+            </div>
+            <div class="footer-content">&nbsp;</div>
+            <div class="footer-content privacy">
+                Refocus Limited 2022 Privacy Policy - Terms of Use
+            </div>
+        </div>
+    </div>
+    <script src="script/function.js"></script>
+</body>
+
+</html>

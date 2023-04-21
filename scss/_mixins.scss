@@ -1,0 +1,73 @@
+@mixin general(){
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+@mixin navstyle(){
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 30px;
+  padding:35px 20px;
+}
+
+@mixin product(){
+    max-width: 100%;
+    margin: 0 auto;
+    display:grid;
+    gap: 50px;
+    padding:40px 80px; 
+}
+
+@mixin item(){
+    height:350px;
+    border-radius:8px;
+    display:flex;    
+    flex-direction: column;
+}
+
+@mixin item-div($color:#F8F9FC){
+    height:auto;
+    width:auto;
+    background-color: $color;
+    margin-top:auto;
+}
+
+@mixin item-pulse(){
+    padding:0px 15px 10px 15px;
+    display:flex;
+    justify-content:start;
+    justify-items: flex-end;
+
+}
+
+@mixin closeMark($color:#9D9DB5){
+    width:20px;
+    color:$color;
+    text-align: center;
+    margin:10px 10px;
+    font-size: 25px;
+    display:none;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+@mixin checkMark($color:red ){
+    width:20px;
+    border:1px solid $color;
+    color:$color;
+    border-radius: 50%;
+    text-align: center;
+    margin:10px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    display:none;    
+}
+
+@mixin productColumn($columns:2, $padding1, $padding2){
+    padding:$padding1 $padding2;
+    grid-template-columns: repeat($columns, 1fr);
+}
